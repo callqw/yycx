@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "debug": "^4.1.0",
+    "knex": "^0.15.2",
+    "koa": "^2.5.3",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "moment": "^2.22.2",
+    "mysql": "^2.16.0",
+    "supervisor": "^0.12.0",
+    "wafer-node-sdk": "^1.4.5"
+  }
+}

@@ -1,11 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-const _3dc559b4 = () => import('..\\pages\\safe.vue' /* webpackChunkName: "pages_safe" */).then(m => m.default || m)
-const _23590516 = () => import('..\\pages\\callUs.vue' /* webpackChunkName: "pages_callUs" */).then(m => m.default || m)
-const _3ba78518 = () => import('..\\pages\\company.vue' /* webpackChunkName: "pages_company" */).then(m => m.default || m)
-const _36a728bd = () => import('..\\pages\\package.vue' /* webpackChunkName: "pages_package" */).then(m => m.default || m)
-const _5875a309 = () => import('..\\pages\\index.vue' /* webpackChunkName: "pages_index" */).then(m => m.default || m)
+const _91dda4fc = () => import('..\\pages\\safe.vue' /* webpackChunkName: "pages_safe" */).then(m => m.default || m)
+const _16ba30d1 = () => import('..\\pages\\callUs.vue' /* webpackChunkName: "pages_callUs" */).then(m => m.default || m)
+const _72c814d0 = () => import('..\\pages\\company.vue' /* webpackChunkName: "pages_company" */).then(m => m.default || m)
+const _1b16e0e1 = () => import('..\\pages\\package.vue' /* webpackChunkName: "pages_package" */).then(m => m.default || m)
+const _40fd142d = () => import('..\\pages\\index.vue' /* webpackChunkName: "pages_index" */).then(m => m.default || m)
 
 Vue.use(Router)
 
@@ -68,27 +68,27 @@ export function createRouter () {
     routes: [
 		{
 			path: "/safe",
-			component: _3dc559b4,
+			component: _91dda4fc,
 			name: "safe"
 		},
 		{
 			path: "/callUs",
-			component: _23590516,
+			component: _16ba30d1,
 			name: "callUs"
 		},
 		{
 			path: "/company",
-			component: _3ba78518,
+			component: _72c814d0,
 			name: "company"
 		},
 		{
 			path: "/package",
-			component: _36a728bd,
+			component: _1b16e0e1,
 			name: "package"
 		},
 		{
 			path: "/",
-			component: _5875a309,
+			component: _40fd142d,
 			name: "index"
 		}
     ],
