@@ -38,10 +38,10 @@ module.exports = {
     css: [
         'normalize.css',
         'highlight.js/styles/github.css',
-        'element-ui/packages/theme-chalk/src/index.scss',
+        // 'element-ui/packages/theme-chalk/src/index.scss',
         // { src: 'mint-ui/lib/button/style.css', lang: 'css' },
         { src: '~assets/scss/index.scss', lang: 'scss' },
-        // { src: '~assets/element-ui/theme-chalk/index.css', lang: 'css' }
+        { src: '~assets/element-ui/index.css', lang: 'css' }
     ],
     build: {
         analyze: true,

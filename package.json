@@ -3,7 +3,7 @@
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
-    "start": "PORT=8000  nuxt start",
+    "start": "nuxt start",
     "an": "nuxt build -a"
   },
   "dependencies": {
