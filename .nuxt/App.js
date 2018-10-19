@@ -7,7 +7,7 @@ import '..\\node_modules\\_highlight.js@9.13.1@highlight.js\\styles\\github.css'
 
 import '..\\assets\\scss\\index.scss'
 
-import '..\\assets\\element-ui\\index.css'
+import '..\\assets\\element-ui\\theme-chalk\\index.css'
 
 
 import _6f6c098b from '..\\layouts\\default.vue'

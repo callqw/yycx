@@ -1,2 +1,0 @@
-# yycx
-yixingcx.com

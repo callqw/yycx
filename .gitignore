@@ -5,7 +5,7 @@ node_modules
 npm-debug.log
 
 # other
-/dist
+dist
 .vscode
 .idea
 newrelic_agent.log
