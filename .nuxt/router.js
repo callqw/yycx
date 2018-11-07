@@ -1,10 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-const _52c860b7 = () => import('..\\pages\\safe.vue' /* webpackChunkName: "pages_safe" */).then(m => m.default || m)
-const _bd1d2a74 = () => import('..\\pages\\callUs.vue' /* webpackChunkName: "pages_callUs" */).then(m => m.default || m)
-const _da680b7a = () => import('..\\pages\\company.vue' /* webpackChunkName: "pages_company" */).then(m => m.default || m)
-const _317234e8 = () => import('..\\pages\\package.vue' /* webpackChunkName: "pages_package" */).then(m => m.default || m)
 const _1c2c4798 = () => import('..\\pages\\index.vue' /* webpackChunkName: "pages_index" */).then(m => m.default || m)
 
 Vue.use(Router)
@@ -66,26 +62,6 @@ export function createRouter () {
     linkExactActiveClass: 'nuxt-link-exact-active',
     scrollBehavior,
     routes: [
-		{
-			path: "/safe",
-			component: _52c860b7,
-			name: "safe"
-		},
-		{
-			path: "/callUs",
-			component: _bd1d2a74,
-			name: "callUs"
-		},
-		{
-			path: "/company",
-			component: _da680b7a,
-			name: "company"
-		},
-		{
-			path: "/package",
-			component: _317234e8,
-			name: "package"
-		},
 		{
 			path: "/",
 			component: _1c2c4798,

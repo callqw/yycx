@@ -1,13 +1,7 @@
 import Vue from 'vue'
 import NuxtLoading from './components/nuxt-loading.vue'
 
-import '..\\node_modules\\_normalize.css@8.0.0@normalize.css\\normalize.css'
-
-import '..\\node_modules\\_highlight.js@9.13.1@highlight.js\\styles\\github.css'
-
-import '..\\assets\\scss\\index.scss'
-
-import '..\\assets\\element-ui\\theme-chalk\\index.css'
+import '..\\node_modules\\_element-ui@2.4.9@element-ui\\lib\\theme-chalk\\index.css'
 
 
 import _6f6c098b from '..\\layouts\\default.vue'
@@ -17,7 +11,7 @@ const layouts = { "_default": _6f6c098b }
 
 
 export default {
-  head: {"title":"yycx","titleTemplate":"谢江","meta":[{"charset":"utf-8"},{"http-equiv":"cleartype","content":"on"},{"http-equiv":"Cache-Control"},{"name":"viewport","content":"width=device-width, initial-scale=1, user-scalable=no"},{"hid":"description","name":"description","content":"民谣，读书，码农。"},{"hid":"keywords","name":"keywords","content":"前端开发，JavaScript, Node, Vue，nuxt"},{"name":"author","content":"jkchaom@gmail.com"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"~static\u002Ffavicon.ico"}],"noscript":[{"innerHTML":"This website requires JavaScript."}],"style":[],"script":[]},
+  head: {"title":"webdemo","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"My phenomenal Nuxt.js project"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[]},
   render(h, props) {
     const loadingEl = h('nuxt-loading', { ref: 'loading' })
     const layoutEl = h(this.layout || 'nuxt')
