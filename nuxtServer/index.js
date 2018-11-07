@@ -33,11 +33,13 @@ async function start() {
     })
   })
 
-  app.listen(port, host)
-  consola.ready({
-    message: `Server listening on http://${host}:${port}`,
-    badge: true
+  app.listen(3000,(item)=>{
+    console.log('Server listening on 3000')
   })
+  // consola.ready({
+  //   message: `Server listening on http://${host}:${port}`,
+  //   badge: true
+  // })
 }
 
 start()
