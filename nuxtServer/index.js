@@ -33,7 +33,7 @@ async function start() {
     })
   })
 
-  app.listen(3000,(item)=>{
+  app.listen(3000, ()=>{
     console.log('Server listening on 3000')
   })
   // consola.ready({
