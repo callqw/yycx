@@ -85,11 +85,18 @@
             </el-row>
         </div>
         <!--demo-->
+
+        <!--news-->
+        <div class="news">
+            <!--<news></news>-->
+        </div>
+        <!--news-->
     </div>
 
 </template>
 <script>
     import $ from 'jquery/dist/jquery.min'
+    import news from '../components/newS/index.vue'
     export default {
         data() {
             return {
@@ -174,6 +181,9 @@
                 ],
                 boo: [true, true, true, true]
             }
+        },
+        components:{
+            news
         },
         head(){
             return {

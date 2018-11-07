@@ -4,8 +4,8 @@ module.exports = {
         maxAge: 900000
     },
     head: {
-        title: '码农，读书，民谣2',
-        titleTemplate: '%s | 三毛',
+        title: 'yycx',
+        titleTemplate: '谢江',
         meta: [
             { charset: 'utf-8' },
             { 'http-equiv': 'cleartype', content: 'on' },
@@ -16,7 +16,7 @@ module.exports = {
             { name: 'author', content: 'jkchaom@gmail.com' }
         ],
         link: [
-            { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+            { rel: 'icon', type: 'image/x-icon', href: '~static/favicon.ico' }
         ],
         // script: [
         //   {
@@ -44,9 +44,10 @@ module.exports = {
         { src: '~assets/element-ui/theme-chalk/index.css', lang: 'css' }
     ],
     build: {
-        analyze: true,
+        analyze: false,
         vendor: ['vue','axios'
             ,'element-ui'
+            ,'moment'
             ,'jquery'
             // ,'mint-ui'
         ]
@@ -60,6 +61,10 @@ module.exports = {
     //         src: '~plugins/jquery.min.js',
     //         ssr: true,
     //     },
+    //     {
+    //     src: 'moment',
+    //     ssr: true,
+    // },
         {
         src: '~plugins/element-ui',
         ssr: true,

@@ -17,7 +17,7 @@ const layouts = { "_default": _6f6c098b }
 
 
 export default {
-  head: {"title":"码农，读书，民谣2","titleTemplate":"%s | 三毛","meta":[{"charset":"utf-8"},{"http-equiv":"cleartype","content":"on"},{"http-equiv":"Cache-Control"},{"name":"viewport","content":"width=device-width, initial-scale=1, user-scalable=no"},{"hid":"description","name":"description","content":"民谣，读书，码农。"},{"hid":"keywords","name":"keywords","content":"前端开发，JavaScript, Node, Vue，nuxt"},{"name":"author","content":"jkchaom@gmail.com"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"noscript":[{"innerHTML":"This website requires JavaScript."}],"style":[],"script":[]},
+  head: {"title":"yycx","titleTemplate":"谢江","meta":[{"charset":"utf-8"},{"http-equiv":"cleartype","content":"on"},{"http-equiv":"Cache-Control"},{"name":"viewport","content":"width=device-width, initial-scale=1, user-scalable=no"},{"hid":"description","name":"description","content":"民谣，读书，码农。"},{"hid":"keywords","name":"keywords","content":"前端开发，JavaScript, Node, Vue，nuxt"},{"name":"author","content":"jkchaom@gmail.com"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"~static\u002Ffavicon.ico"}],"noscript":[{"innerHTML":"This website requires JavaScript."}],"style":[],"script":[]},
   render(h, props) {
     const loadingEl = h('nuxt-loading', { ref: 'loading' })
     const layoutEl = h(this.layout || 'nuxt')
