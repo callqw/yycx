@@ -1,7 +1,7 @@
+/**
+ * Created by Administrator on 2018/10/6.
+ */
 import Vue from 'vue'
-import Element from 'element-ui/lib/element-ui.common'
-import locale from 'element-ui/lib/locale/lang/en'
-
-export default () => {
-  Vue.use(Element, { locale })
-}
+import Element from 'element-ui'
+Vue.use(Element);
+// Vue.component(button.name,button)

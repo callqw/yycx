@@ -1,5 +1,4 @@
 <template>
-<<<<<<< HEAD
     <div id="index">
         <div style="width: 100%;height: 80px"></div>
         <template >
@@ -55,31 +54,9 @@
             </el-row>
         </div>
         <!--建站服务-->
-=======
-  <section class="container">
-    <div>
-      <logo/>
-      <h1 class="title">
-        webdemo
-      </h1>
-      <h2 class="subtitle">
-        My phenomenal Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-      </div>
->>>>>>> c2cfcf61ec765ad444435b97222f7c827ed3640e
     </div>
-  </section>
+
 </template>
-<<<<<<< HEAD
 <script>
     import $ from 'jquery/dist/jquery.min'
     export default {
@@ -227,20 +204,9 @@
         methods: {
         }
     }
-=======
-
-<script>
-import Logo from '~/components/Logo.vue'
-
-export default {
-  components: {
-    Logo
-  }
-}
->>>>>>> c2cfcf61ec765ad444435b97222f7c827ed3640e
 </script>
+<style lang="scss">
 
-<<<<<<< HEAD
 #index{
         .iconBg{
             width: 80px;height: 80px;background-size: 80px 80px;background-repeat: no-repeat;display: inline-block;
@@ -263,37 +229,13 @@ export default {
         line-height: 450px;
         margin: 0;
     }
-=======
-<style>
 
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
->>>>>>> c2cfcf61ec765ad444435b97222f7c827ed3640e
+    .el-carousel__item:nth-child(2n) {
+        background-color: #99a9bf;
+    }
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+    .el-carousel__item:nth-child(2n+1) {
+        background-color: #d3dce6;
+    }
 }
 </style>

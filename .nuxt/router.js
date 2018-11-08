@@ -1,7 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-const _1c2c4798 = () => import('..\\pages\\index.vue' /* webpackChunkName: "pages_index" */).then(m => m.default || m)
+const _3dc559b4 = () => import('..\\pages\\safe.vue' /* webpackChunkName: "pages_safe" */).then(m => m.default || m)
+const _23590516 = () => import('..\\pages\\callUs.vue' /* webpackChunkName: "pages_callUs" */).then(m => m.default || m)
+const _3ba78518 = () => import('..\\pages\\company.vue' /* webpackChunkName: "pages_company" */).then(m => m.default || m)
+const _36a728bd = () => import('..\\pages\\package.vue' /* webpackChunkName: "pages_package" */).then(m => m.default || m)
+const _5875a309 = () => import('..\\pages\\index.vue' /* webpackChunkName: "pages_index" */).then(m => m.default || m)
 
 Vue.use(Router)
 
@@ -63,8 +67,28 @@ export function createRouter () {
     scrollBehavior,
     routes: [
 		{
+			path: "/safe",
+			component: _3dc559b4,
+			name: "safe"
+		},
+		{
+			path: "/callUs",
+			component: _23590516,
+			name: "callUs"
+		},
+		{
+			path: "/company",
+			component: _3ba78518,
+			name: "company"
+		},
+		{
+			path: "/package",
+			component: _36a728bd,
+			name: "package"
+		},
+		{
 			path: "/",
-			component: _1c2c4798,
+			component: _5875a309,
 			name: "index"
 		}
     ],

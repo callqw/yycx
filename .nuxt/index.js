@@ -4,15 +4,14 @@ import { createRouter } from './router.js'
 import NoSSR from './components/no-ssr.js'
 import NuxtChild from './components/nuxt-child.js'
 import NuxtLink from './components/nuxt-link.js'
-import NuxtError from './components/nuxt-error.vue'
+import NuxtError from '..\\layouts\\error.vue'
 import Nuxt from './components/nuxt.js'
 import App from './App.js'
 import { setContext, getLocation, getRouteData } from './utils'
-
+import { createStore } from './store.js'
 
 /* Plugins */
-import nuxt_plugin_axios_b21b74dc from 'nuxt_plugin_axios_b21b74dc' // Source: ./axios.js
-import nuxt_plugin_elementui_d905880e from 'nuxt_plugin_elementui_d905880e' // Source: ..\\plugins\\element-ui
+import nuxt_plugin_elementui_69306e1c from 'nuxt_plugin_elementui_69306e1c' // Source: ..\\plugins\\element-ui
 
 
 // Component: <no-ssr>
@@ -41,13 +40,22 @@ async function createApp (ssrContext) {
   const router = await createRouter(ssrContext)
 
   
+  const store = createStore(ssrContext)
+  // Add this.$router into store actions/mutations
+  store.$router = router
+    
+    // Fix SSR caveat https://github.com/nuxt/nuxt.js/issues/3757#issuecomment-414689141
+    const registerModule = store.registerModule
+    store.registerModule = (path, rawModule, options) => registerModule.call(store, path, rawModule, Object.assign({ preserveState: process.client }, options))
+    
+  
 
   // Create Root instance
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
     router,
-    
+    store,
     nuxt: {
       defaultTransition,
       transitions: [ defaultTransition ],
@@ -85,6 +93,9 @@ async function createApp (ssrContext) {
     ...App
   }
   
+  // Make app available into store via this.app
+  store.app = app
+  
   const next = ssrContext ? ssrContext.next : location => app.router.push(location)
   // Resolve route
   let route
@@ -100,7 +111,7 @@ async function createApp (ssrContext) {
     route,
     next,
     error: app.nuxt.error.bind(app),
-    
+    store,
     payload: ssrContext ? ssrContext.payload : undefined,
     req: ssrContext ? ssrContext.req : undefined,
     res: ssrContext ? ssrContext.res : undefined,
@@ -113,6 +124,9 @@ async function createApp (ssrContext) {
     key = '$' + key
     // Add into app
     app[key] = value
+    
+    // Add into store
+    store[key] = app[key]
     
     // Check if plugin not already installed
     const installKey = '__nuxt_' + key + '_installed__'
@@ -131,11 +145,17 @@ async function createApp (ssrContext) {
   }
 
   
+  if (process.client) {
+    // Replace store state before plugins execution
+    if (window.__NUXT__ && window.__NUXT__.state) {
+      store.replaceState(window.__NUXT__.state)
+    }
+  }
+  
 
   // Plugin execution
   
-  if (typeof nuxt_plugin_axios_b21b74dc === 'function') await nuxt_plugin_axios_b21b74dc(app.context, inject)
-  if (typeof nuxt_plugin_elementui_d905880e === 'function') await nuxt_plugin_elementui_d905880e(app.context, inject)
+  if (typeof nuxt_plugin_elementui_69306e1c === 'function') await nuxt_plugin_elementui_69306e1c(app.context, inject)
   
 
   // If server-side, wait for async component to be resolved first
@@ -158,7 +178,7 @@ async function createApp (ssrContext) {
   return {
     app,
     router,
-    
+    store
   }
 }
 
