@@ -1,7 +1,6 @@
 <template>
   <div>
     <section class="Landscape">
-      <img src="~static/icon.png" alt="Logo nuxt" class="Landscape__Image" width="20%"/>
       <h1 class="Landscape__Title">
         {{ error.statusCode }}
       </h1>

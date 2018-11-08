@@ -16,36 +16,36 @@
             <el-row id="ui">
                 <el-col :xs="24" :sm="24" :md="24" :lg="24">
                     <el-row style="text-align: center">
-                        <h1 style="font-size: 2rem;margin-bottom: 3rem">我们的建站服务</h1>
-                        <h3 style="font-size: 1.5rem">我们致力于提供专业的网站解决方案, 包括产品展示类网站建设，企业管理软件建设，商城类网站建设。 </h3>
+                        <h1 style="font-size: 2rem;margin-bottom: 3rem;color: #fd8baf">诚信</h1>
+                        <h3 style="font-size: 1.5rem;color: #666">我们致力于提供最专业的的平台, 及带单方案。 </h3>
                     </el-row>
                 </el-col>
                 <el-col :xs="24" :sm="24" :md="24" :lg="6" style="margin-top: 3rem">
                     <a href="javascript:valid(0)" class="turn" style="text-align: center;">
-                        <i class="el-icon-yx-ui donut" style="font-size: 5rem; color: #1cd388"></i><br>
-                        <h1>UI设计</h1><hr style="width: 25%">
-                        <h6 style="width: 50%;margin: 0 auto;text-align: left;text-indent: 2rem;">好的UI设计不仅是让软件变得有个性有品味，还要让软件的操作变得舒适、简单、自由、充分体现软件的定位和特点.</h6>
+                        <span class="iconBg donut" v-bind:style="{backgroundImage:'url('+ iconBg.cqssc +')'}"></span>
+                        <h1 style=";color: #fd8baf">重庆时时彩</h1><hr style="width: 25%">
+                        <h6 style="width: 50%;margin: 0 auto;text-align: left;text-indent: 2rem;color: #666">线路流畅，1000兆光纤，稳如老狗，告别卡顿的烦恼。</h6>
                     </a>
                 </el-col>
                 <el-col :xs="24" :sm="24" :md="24" :lg="6" style="margin-top: 3rem">
                     <a href="javascript:valid(0)" class="turn" style="text-align: center;">
-                        <i class="el-icon-yx-xiaochengxu1" style="font-size: 5rem; color: #1cd388"></i><br>
-                        <h1>微信小程序</h1><hr style="width: 25%">
-                        <h6 style="width: 50%;margin: 0 auto;text-align: left;text-indent: 2rem;">微信9亿多的日活动用户，引流和用户沉淀比较简单，企业因此获得客户的成本较低。而且小程序适用于企业、个体工商户、组织和个人，都可以定制开发.</h6>
+                        <span class="iconBg donut" v-bind:style="{backgroundImage:'url('+ iconBg.bjpk10 +')'}"></span>
+                        <h1 style=";color: #fd8baf">北京PK拾</h1><hr style="width: 25%">
+                        <h6 style="width: 50%;margin: 0 auto;text-align: left;text-indent: 2rem;color: #666">跨平台，兼容PC端与移动端</h6>
                     </a>
                 </el-col>
                 <el-col :xs="24" :sm="24" :md="24" :lg="6" style="margin-top: 3rem">
                     <a href="javascript:valid(0)" class="turn" style="text-align: center;">
-                        <i class="el-icon-yx-h5-copy donut" style="font-size: 5rem; color: #1cd388"></i><br>
-                        <h1>H5网站设计</h1><hr style="width: 25%">
-                        <h6 style="width: 50%;margin: 0 auto;text-align: left;text-indent: 2rem;">它跨平台性，兼容PC端与移动端，显著地降低开发与运营成本。而且H5可以让用户欣赏到炫酷的视听效果.</h6>
+                        <span class="iconBg donut" style="font-size: 22px; background: linear-gradient(to top, #ffa506, #ff6f9f, #ff0032);-webkit-background-clip: text;color: transparent;font-weight: bold; ">腾讯<br>分分彩</span>
+                        <h1 style=";color: #fd8baf">腾讯分分彩</h1><hr style="width: 25%">
+                        <h6 style="width: 50%;margin: 0 auto;text-align: left;text-indent: 2rem;color: #666">专业的人工数据分析师团队，快上车吧。</h6>
                     </a>
                 </el-col>
                 <el-col :xs="24" :sm="24" :md="24" :lg="6" style="margin-top: 3rem">
                     <a href="javascript:valid(0)" class="turn" style="text-align: center;">
-                        <i class="el-icon-yx-chanpinzhanshi" style="font-size: 5rem; color: #1cd388"></i><br>
-                        <h1>产品展示网站建设</h1><hr style="width: 25%">
-                        <h6 style="width: 50%;margin: 0 auto;text-align: left;text-indent: 2rem;">简单，快捷，快速的让客户了解您的产品及服务.</h6>
+                        <span class="iconBg donut" v-bind:style="{backgroundImage:'url('+ iconBg.lhc +')'}"></span>
+                        <h1 style="color: #fd8baf">六合彩</h1><hr style="width: 25%">
+                        <h6 style="width: 50%;margin: 0 auto;text-align: left;text-indent: 2rem;color: #666">实力巨惠，优惠不断，惊喜连连</h6>
 
                     </a>
                 </el-col>
@@ -54,56 +54,22 @@
             </el-row>
         </div>
         <!--建站服务-->
-
-        <!--demo-->
-        <div style="margin-top: 3rem">
-            <el-row>
-                <el-col :xs="24" :sm="24" :md="24" :lg="24">
-                    <el-row style="text-align: center;margin-bottom: 5rem">
-                        <h1 style="font-size: 2rem">精美网站模版展示</h1>
-                    </el-row>
-                </el-col>
-                <div v-for="item in websiteData">
-                    <el-col :xs="24" :sm="24" :md="12" :lg="12">
-                        <el-row>
-                            <el-col :sm="2" :xs="2" :md="item.boolean.val" :lg="item.boolean.val">&nbsp;</el-col>
-                            <el-col :sm="20" :xs="20" :md="19" :lg="19">
-                                <article
-                                        style="position: relative;padding-bottom: 4rem;margin-bottom: 4rem;background: #fff">
-                                    <h2 style="position: absolute;left: 0; right: 0;margin: 0;text-align: center;font-size: 2rem;bottom: 1rem;z-index: 19">
-                                        <router-link to="/">{{item.name}}</router-link>
-                                    </h2>
-                                    <a :href="item.href" style="display: block;padding: 1rem;">
-                                        <img :src="item.url" style="width: 700px;max-width: 100%;height: auto">
-                                    </a>
-                                </article>
-                            </el-col>
-                            <el-col :sm="2" :xs="2" :md="item.boolean.val1" :lg="item.boolean.val1">&nbsp;</el-col>
-                        </el-row>
-                    </el-col>
-                </div>
-            </el-row>
-        </div>
-        <!--demo-->
-
-        <!--news-->
-        <div class="news">
-            <!--<news></news>-->
-        </div>
-        <!--news-->
     </div>
 
 </template>
 <script>
     import $ from 'jquery/dist/jquery.min'
-    import news from '../components/newS/index.vue'
     export default {
+        props:{
+        },
         data() {
             return {
+                iconBg: {cqssc: 'https://yxcx.oss-cn-beijing.aliyuncs.com/yxcximg/banner/cqssc.png',bjpk10: 'https://yxcx.oss-cn-beijing.aliyuncs.com/yxcximg/banner/pk10.png',txffc:'https://yxcx.oss-cn-beijing.aliyuncs.com/yxcximg/banner/lhc.png',lhc: 'https://yxcx.oss-cn-beijing.aliyuncs.com/yxcximg/banner/lhc.png',},
+                show: false,
                 imgList:[
-                        {url:require('../static/img/allline2.jpg')},
-                        {url:require('../static/img/html1.jpg')},
-                        {url:require('../static/img/yizhanshi1.jpg')}
+                        {url:'https://yxcx.oss-cn-beijing.aliyuncs.com/yxcximg/banner/cp_banner.png'},
+                        {url:'https://yxcx.oss-cn-beijing.aliyuncs.com/yxcximg/banner/cp_banner2.png'
+                        }
                         ],
                 websiteData: [
                     {
@@ -182,16 +148,21 @@
                 boo: [true, true, true, true]
             }
         },
-        components:{
-            news
+        components: {
         },
         head(){
             return {
-                title: '[亿兴创想]-成都亿兴创想科技有限公司,网站建设,网站设计,建站公司,微商城服务,小程序开发,PC端,移动端,webAPP,H5+,成都商城网站建设,成都企业网站建设,手机网站建设',
+                title: '腾讯分分彩官网-桃花彩',
+                titleTemplate: '桃花彩对接团队',
                 meta: [
-                    { hid: 'description', name: 'description', content: '成都亿兴创想科技有限公司-专业从事:成都网站建设,成都网站设计,建站公司,微商城服务,各种系统研发,例如(PC端、移动端、微商城、小程序、OA系统、APP等),联系电话：028-85743042' }
+                    { charset: 'utf-8' },
+                    { 'http-equiv': 'cleartype', content: 'on' },
+                    { 'http-equiv': 'Cache-Control' },
+                    { name: 'viewport', content: 'width=device-width, initial-scale=1, user-scalable=no' },
+                    { hid: 'description', name: 'description', content: '桃花彩（thccn）是CP技能带单学习平台。桃花彩(thccn)提供了丰富的腾讯分分彩带单、重庆时时彩带单、北京PK拾官网、腾讯分分彩一天刷40万流水以及分分彩最聪明的玩法。并且正规富有交互性的玩彩趣味，你还可以和朋友一起玩彩盈利,桃花彩对接团队TT2017930。' },
+                    { hid: 'keywords', name: 'keywords', content: '腾讯分分彩官网|腾讯分分彩带单|重庆时时彩带单|北京PK拾官网|腾讯分分彩是国家的吗|腾讯分分彩一个月赢50W|分分彩最聪明的玩法|分分彩一天刷10万流水|pk10如何将100玩到一万|腾讯分分彩计划精准版' },
+                    { name: 'author', content: 'TT2017930' }
                 ],
-
             }
         },
         mounted() {
@@ -203,13 +174,13 @@
                         var sty = {
                             animation: 'turn 2s 1',
                         }
-                        $('#ui a').eq(num).find('i').css(sty)
+                        $('#ui a').eq(num).find('span').css(sty)
                         that.boo[num] = false;
                         setTimeout(function () {
                             var sty = {
                                 animation: '',
                             }
-                            $('#ui a').eq(num).find('i').css(sty)
+                            $('#ui a').eq(num).find('span').css(sty)
                             that.boo[num] = true
                         },2000)
                     }
@@ -228,11 +199,18 @@
             this.buttonLeft = (document.body.clientWidth/2)-65;
             this.buttonMobile = (document.body.clientWidth/2)-38;
         },
+        created(){
+        },
+        methods: {
+        }
     }
 </script>
 <style lang="scss">
 
 #index{
+        .iconBg{
+            width: 80px;height: 80px;background-size: 80px 80px;background-repeat: no-repeat;display: inline-block;
+        }
         .turn{display: block;  }
         @keyframes turn {to {transform: rotateY(360deg)}}
         @-moz-keyframes turn {to {transform: rotateY(360deg)}}

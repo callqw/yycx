@@ -6,6 +6,8 @@ Vue.use(Vuex)
 const store = () => new Vuex.Store({
     state: {
             // 是否有侧栏
+            dialog: false,
+        // 是否有侧栏
             isAsidePage: false,
 
             // 错误页面
@@ -30,6 +32,11 @@ const store = () => new Vuex.Store({
     },
     mutations: {
         // 错误页面
+        dialog (state, data) {
+            console.log(data,'store')
+            state.dialog = data
+        },
+        // 错误页面
         SET_ERROR_PAGE (state, data) {
             state.isError = data
         },
@@ -49,7 +56,6 @@ const store = () => new Vuex.Store({
             const isMobile = /(iPhone|iPod|Opera Mini|Android.*Mobile|NetFront|PSP|BlackBerry|Windows Phone)/ig.test(userAgent)
             store.commit('SET_MOBILE_LAYOUT', isMobile)
             store.commit('SET_USER_AGENT', userAgent)
-
 
         }
     }

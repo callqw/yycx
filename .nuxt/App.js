@@ -17,7 +17,7 @@ const layouts = { "_default": _6f6c098b }
 
 
 export default {
-  head: {"title":"yycx","titleTemplate":"谢江","meta":[{"charset":"utf-8"},{"http-equiv":"cleartype","content":"on"},{"http-equiv":"Cache-Control"},{"name":"viewport","content":"width=device-width, initial-scale=1, user-scalable=no"},{"hid":"description","name":"description","content":"民谣，读书，码农。"},{"hid":"keywords","name":"keywords","content":"前端开发，JavaScript, Node, Vue，nuxt"},{"name":"author","content":"jkchaom@gmail.com"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"~static\u002Ffavicon.ico"}],"noscript":[{"innerHTML":"This website requires JavaScript."}],"style":[],"script":[]},
+  head: {"title":"腾讯分分彩官网-桃花彩","titleTemplate":"桃花彩对接团队","meta":[{"charset":"utf-8"},{"http-equiv":"cleartype","content":"on"},{"http-equiv":"Cache-Control"},{"name":"viewport","content":"width=device-width, initial-scale=1, user-scalable=no"},{"hid":"description","name":"description","content":"桃花彩（thccn）是CP技能带单学习平台。桃花彩(thccn)提供了丰富的腾讯分分彩带单、重庆时时彩带单、北京PK拾官网、腾讯分分彩一天刷40万流水以及分分彩最聪明的玩法。并且正规富有交互性的玩彩趣味，你还可以和朋友一起玩彩盈利,桃花彩对接团队TT2017930。"},{"hid":"keywords","name":"keywords","content":"腾讯分分彩带单|重庆时时彩带单|北京PK拾官网|腾讯分分彩是国家的吗|\t腾讯分分彩1个月赢50w|分分彩最聪明的玩法|分分彩一天刷10万流水|pk10如何将100玩到一万|腾讯分分彩计划 精准版"},{"name":"author","content":"TT2017930"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"~static\u002Ffavicon.ico"}],"noscript":[{"innerHTML":"This website requires JavaScript."}],"style":[],"script":[]},
   render(h, props) {
     const loadingEl = h('nuxt-loading', { ref: 'loading' })
     const layoutEl = h(this.layout || 'nuxt')
