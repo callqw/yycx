@@ -1,7 +1,12 @@
-
+/**
+ * Created by Administrator on 2018/10/19.
+ */
 const Koa = require('koa')
 const bodyParser = require('koa-bodyparser');
-const router = require('koa-router')();
+const debug = require('debug')('koa-weapp-demo')
+const config = require('./config')
+const router = require('./router')
+
 const app = new Koa();
 
 app.use(bodyParser());
@@ -13,11 +18,9 @@ app.use((ctx, next )=> {
         console.log(`${ctx.method} ${ctx.url} - ${ms}ms`);
     });
 })
-router.get('/', (ctx,next)=>{
-    ctx.body='success'
-})
+
 app.use(router.routes())
     .use(router.allowedMethods())
-    .listen(8089, ()=>{
-       console.log(`listening on port 8080`)
-    })
+    .listen(config.port, ()=>{
+        debug(`listening on port ${config.port}`),console.log(`listening on port ${config.port}`)
+})
