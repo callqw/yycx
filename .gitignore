@@ -1,0 +1,16 @@
+# dependencies
+node_modules
+
+# logs
+npm-debug.log
+
+# Nuxt build
+
+# Nuxt generate
+/dist
+
+# Mac Finder DS_Store
+.DS_Store
+
+# pwa
+sw.*
